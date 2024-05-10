@@ -1,3 +1,0 @@
-# shin-website-deploy
-
-Bonjour
