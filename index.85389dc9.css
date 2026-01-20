@@ -317,6 +317,10 @@ img, video {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
@@ -331,6 +335,10 @@ img, video {
 
 .h-\[50px\] {
   height: 50px;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-\[105px\] {
@@ -387,6 +395,10 @@ img, video {
 
 .max-w-full {
   max-width: 100%;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .rotate-45 {
@@ -924,6 +936,19 @@ section {
   flex-direction: column;
   align-items: center;
   display: flex;
+}
+
+.cta {
+  text-transform: uppercase;
+  background-color: #daa520;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color .3s;
+  display: inline-block;
+}
+
+.cta:hover {
+  background-color: #fc0;
 }
 
 section#tickets a {
