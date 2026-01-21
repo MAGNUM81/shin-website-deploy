@@ -1,135 +1,62 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><link rel=stylesheet href=/shin-website-v2.68a233ad.css><title>Carte des combats - Shin Combat</title><link rel=icon type=image/x-icon href=/favicon.211958c8.ico><meta charset=UTF-8><meta http-equiv=cache-control content=no-cache><meta http-equiv=pragma content=no-cache><meta http-equiv=content-type content="text/html; charset=UTF-8"><meta content="IE=edge,chrome=1" http-equiv=X-UA-Compatible><meta content="width=device-width, initial-scale=1" name=viewport><meta property=og:url content=https://shincombat.com/><meta property=og:type content=website><meta property=og:site_name content="Shin Combat"><meta property=og:title content="Shin Combat"><meta property=og:description content="Shin Combat"><meta property=og:image content=https://shincombat.com/og-image.png><link rel=preconnect href=https://fonts.googleapis.com><link href="https://fonts.googleapis.com/css2?family=DM+Sans&amp;display=swap" rel=stylesheet><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&amp;display=swap" rel=stylesheet><meta name=viewport content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"><script type=module src=/shin-website-v2.af9c4ddd.js></script><body id=default-body class="flex flex-col min-h-screen overflow-x-hidden">
 
-<head>
-    <title>Carte des combats - Shin Combat</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.a5a68eaa.ico">
-<meta charset="UTF-8">
-<meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-<meta content="width=device-width, initial-scale=1" name="viewport">
-<meta property="og:url" content="https://shincombat.com/">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Shin Combat">
-<meta property="og:title" content="Shin Combat">
-<meta property="og:description" content="Shin Combat">
-<meta property="og:image" content="https://shincombat.com/og-image.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
-<meta name="viewport" content="width=device-width,user-scalable=0,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
-<link rel="stylesheet" href="/index.fb9a0edb.css"><script src="/index.975ef6c8.js" defer=""></script>
-</head>
-
-<body id="default-body" class="flex flex-col min-h-screen overflow-x-hidden">
-
-    <header class="z-[9999] flex lg:flex-col justify-between lg:justify-start items-center lg:pt-12">
-  <nav class="lg:block top-[30px] hidden w-full max-w-[75%]">
-    <div id="nav-links" class="flex flex-wrap justify-center items-center gap-3">
-      <a href="/#landing-section">Accueil</a>
-      <a href="/#events">Événements</a>
-      <a href="/#tickets">Billets</a>
-      <a href="/#kickboxing-gear">Équipement</a>
-      <a href="/#about">À Propos</a>
-      <a href="/#contact">Contact</a>
+    <header class="flex items-center justify-between lg:flex-col lg:justify-start lg:pt-12 z-[9999]">
+  <nav class="hidden lg:block max-w-[75%] top-[30px] w-full">
+    <div id=nav-links class="flex flex-wrap gap-3 items-center justify-center">
+      <a href=/#landing-section>Accueil</a>
+      <a href=/#events>Événements</a>
+      <a href=/#tickets>Billets</a>
+      <a href=/#kickboxing-gear>Équipement</a>
+      <a href=/#about>À Propos</a>
+      <a href=/#contact>Contact</a>
     </div>
   </nav>
-  <!--mobile header-->
-  <a href="/">
-    <img id="logo" class="lg:hidden w-[105px] text-left select-none" src="/shin-logo-white.308043c5.png">
+  
+  <a href=/>
+    <img id=logo class="lg:hidden select-none text-left w-[105px]" src=/shin-logo-white.ea2e99fd.png>
   </a>
-  <button id="nav-button-open" class="flex flex-col justify-center gap-2 lg:hidden backdrop-blur p-2 rounded-[10px] w-[50px] h-[50px]">
-    <span class="block border-white border-t-[3px] w-full"></span>
-    <span class="block border-white border-t-[3px] w-full"></span>
-    <span class="block border-white border-t-[3px] w-full"></span>
+  <button id=nav-button-open class="backdrop-blur flex flex-col gap-2 h-[50px] justify-center lg:hidden p-2 rounded-[10px] w-[50px]">
+    <span class="block border-t-[3px] border-white w-full"></span>
+    <span class="block border-t-[3px] border-white w-full"></span>
+    <span class="block border-t-[3px] border-white w-full"></span>
   </button>
 </header>
-<div id="mobile-menu" class="top-0 left-0 z-[9999] fixed hidden lg:hidden bg-gray-300 bg-opacity-10 backdrop-blur w-full">
-  <div class="flex justify-between items-center px-5 pt-5 pb-2">
-    <a href="/">
-      <img id="mobile-logo" class="lg:hidden w-[105px] text-left select-none" src="/shin-logo-white.308043c5.png">
+<div id=mobile-menu class="backdrop-blur bg-gray-300 bg-opacity-10 fixed hidden left-0 lg:hidden top-0 w-full z-[9999]">
+  <div class="flex items-center justify-between pb-2 pt-5 px-5">
+    <a href=/>
+      <img id=mobile-logo class="lg:hidden select-none text-left w-[105px]" src=/shin-logo-white.ea2e99fd.png>
     </a>
-    <button id="nav-button-close" class="relative flex flex-col justify-center gap-2 lg:hidden p-2 rounded-[10px] w-[50px] h-[50px]">
-      <span class="block top-[50%] left-0 absolute border-white border-t-[3px] w-full rotate-45"></span>
-      <span class="block top-[50%] left-0 absolute border-white border-t-[3px] w-full rotate-[-45deg]"></span>
+    <button id=nav-button-close class="flex flex-col gap-2 h-[50px] justify-center lg:hidden p-2 relative rounded-[10px] w-[50px]">
+      <span class="absolute block border-t-[3px] border-white left-0 rotate-45 top-[50%] w-full"></span>
+      <span class="absolute block border-t-[3px] border-white left-0 rotate-[-45deg] top-[50%] w-full"></span>
     </button>
   </div>
 
-  <nav id="nav-links-mob" class="flex flex-col justify-around items-center gap-3 m-5">
-    <a class="w-[80%] text-center" href="/#landing-section">Accueil</a>
-    <a class="w-[80%] text-center" href="/#events">Événements</a>
-    <a class="w-[80%] text-center" href="/#tickets">Billets</a>
-    <a class="w-[80%] text-center" href="/#kickboxing-gear">Équipement</a>
-    <a class="w-[80%] text-center" href="/#about">À Propos</a>
-    <a class="w-[80%] text-center" href="/#contact">Contact</a>
+  <nav id=nav-links-mob class="flex flex-col gap-3 items-center justify-around m-5">
+    <a class="text-center w-[80%]" href=/#landing-section>Accueil</a>
+    <a class="text-center w-[80%]" href=/#events>Événements</a>
+    <a class="text-center w-[80%]" href=/#tickets>Billets</a>
+    <a class="text-center w-[80%]" href=/#kickboxing-gear>Équipement</a>
+    <a class="text-center w-[80%]" href=/#about>À Propos</a>
+    <a class="text-center w-[80%]" href=/#contact>Contact</a>
   </nav>
 </div>
-<script>document.addEventListener("DOMContentLoaded", function() {
-    const navButtonOpen = document.getElementById("nav-button-open");
-    const navButtonClose = document.getElementById("nav-button-close");
-    const mobileLogo = document.getElementById("mobile-logo");
-    const mobileMenu = document.getElementById("mobile-menu");
-    const navLinksMob = document.getElementById("nav-links-mob");
-    const body = document.getElementsByTagName("body")[0];
-    navButtonOpen.addEventListener("click", function() {
-        navButtonOpen.classList.toggle("invisible");
-        mobileMenu.classList.toggle("hidden");
-        mobileLogo.classList.toggle("invisible");
-        body.classList.toggle("overflow-y-hidden");
-    });
-    navButtonClose.addEventListener("click", function() {
-        navButtonOpen.classList.toggle("invisible");
-        mobileMenu.classList.toggle("hidden");
-        mobileLogo.classList.toggle("invisible");
-        body.classList.toggle("overflow-y-hidden");
-    });
-    navLinksMob.addEventListener("click", function() {
-        navButtonClose.click();
-    });
-});
-
-</script>
+<script>document.addEventListener("DOMContentLoaded",function(){let e=document.getElementById("nav-button-open"),t=document.getElementById("nav-button-close"),n=document.getElementById("mobile-logo"),i=document.getElementById("mobile-menu"),l=document.getElementById("nav-links-mob"),o=document.getElementsByTagName("body")[0];e.addEventListener("click",function(){e.classList.toggle("invisible"),i.classList.toggle("hidden"),n.classList.toggle("invisible"),o.classList.toggle("overflow-y-hidden")}),t.addEventListener("click",function(){e.classList.toggle("invisible"),i.classList.toggle("hidden"),n.classList.toggle("invisible"),o.classList.toggle("overflow-y-hidden")}),l.addEventListener("click",function(){t.click()})});</script>
 
 
-    <div class="main-container self-center w-full max-w-[1440px] overflow-x-hidden">
-        <div class="flex flex-col items-center md:gap-10 max-w-full">
+    <div class="main-container max-w-[1440px] overflow-x-hidden self-center w-full">
+        <div class="flex flex-col items-center max-w-full md:gap-10">
             <h1>Carte des combats - K1 Shin #4</h1>
-            <!--<img class="max-w-[100vw]" src="../assets/img/shin-3-card.png"
-                alt="shin-3-card.jpg">-->
-            <!-- <div id="ticket_test" class="rounded-lg shadow border border-black border-opacity-10 flex flex-col gap-2.5 justify-end items-center w-30 bg-white p-5">
-          <p>Billets Réguliers</p>
-          <p class="font-bold">35$ chacun</p>
-              <a target="_blank" href="mailto:shincombat@gmail.com?subject=Billet%20Régulier%20-%20K1%20Shin%20%232"
-          class="inline-block font-[18px] leading-[48px] h-[48px] min-w-[212px] text-white bg-[#3755ff] text-center shadow rounded-md">Courriel</a>
-        </div>
-        <div id="ticket_test" class="rounded-lg shadow border border-black border-opacity-10 flex flex-col gap-2.5 justify-end items-center w-30 bg-white p-5">
-          <p>Billets VIP</p>
-          <p class="font-bold">50$ chacun</p>
-              <a target="_blank" href="mailto:shincombat@gmail.com?subject=Billet%20VIP%20-%20K1%20Shin%20%232"
-          class="inline-block font-[18px] leading-[48px] h-[48px] min-w-[212px] text-white bg-[#751b1b] text-center shadow rounded-md">Courriel</a>
-        </div>
-        <div id="ticket_test" class="rounded-lg shadow border border-black border-opacity-10 flex flex-col gap-2.5 justify-end items-center w-30 bg-white p-5">
-              <p>Table de 6</p>
-              <p class="font-bold">300$</p>
-              <a target="_blank" href="mailto:shincombat@gmail.com?subject=Table%20de%206%20-%20K1%20Shin%20%232"
-          class="inline-block font-[18px] leading-[48px] h-[48px] min-w-[212px] text-white bg-[#3ebb2d] text-center shadow rounded-md">Courriel</a>
-        </div>
-        <div id="ticket_test" class="rounded-lg shadow border border-black border-opacity-10 flex flex-col gap-2.5 justify-end items-center w-30 bg-white p-5">
-              <p>Table de 8</p>
-              <p class="font-bold">500$</p>
-              <a target="_blank" href="mailto:shincombat@gmail.com?subject=Table%20de%208%20-%20K1%20Shin%20%232"
-          class="inline-block font-[18px] leading-[48px] h-[48px] min-w-[212px] text-white bg-[#8b3df2] text-center shadow rounded-md">Courriel</a>
-        </div> -->
+            
+            
 
         </div>
     </div>
 
     <footer>
-    <p>&copy; 2023-2026 Shin Combat. Tous droits réservés.</p>
+    <p>© 2023-2026 Shin Combat. Tous droits réservés.</p>
 </footer>
 
-</body>
 
-</html>
+
+
