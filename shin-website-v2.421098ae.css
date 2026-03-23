@@ -288,11 +288,6 @@ img, video {
   margin: 1.25rem;
 }
 
-.mx-\[20\%\] {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -313,12 +308,12 @@ img, video {
   margin-top: .75rem;
 }
 
-.mt-\[25px\] {
-  margin-top: 25px;
-}
-
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-\[25px\] {
+  margin-top: 25px;
 }
 
 .block {
@@ -638,11 +633,6 @@ img, video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.px-\[10\%\] {
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .py-10 {
@@ -1191,11 +1181,6 @@ header h1 {
 }
 
 @media (width >= 640px) {
-  .sm\:mx-\[20\%\] {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -1241,11 +1226,6 @@ header h1 {
     padding-right: 0;
   }
 
-  .sm\:px-\[10\%\] {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
   .sm\:pl-10 {
     padding-left: 2.5rem;
   }
@@ -1266,11 +1246,6 @@ header h1 {
 }
 
 @media (width >= 1024px) {
-  .lg\:mx-\[20\%\] {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-
   .lg\:mx-\[10\%\] {
     margin-left: 10%;
     margin-right: 10%;
@@ -1298,11 +1273,6 @@ header h1 {
 
   .lg\:gap-5 {
     gap: 1.25rem;
-  }
-
-  .lg\:px-\[10\%\] {
-    padding-left: 10%;
-    padding-right: 10%;
   }
 
   .lg\:px-\[5\%\] {
