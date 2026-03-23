@@ -744,17 +744,23 @@ img, video {
 
 @font-face {
   font-family: kondorital;
-  src: url("kondorital.3f773fb5.ttf") format("truetype");
-  src: url("kondorital.1a4ec608.woff2") format("woff2"), url("kondorital.0ea03185.woff") format("woff"), url("kondorital.6647399c.eot#iefix") format("embedded-opentype");
+  src: url("kondorital.1a4ec608.woff2") format("woff2"), url("kondorital.0ea03185.woff") format("woff"), url("kondorital.3f773fb5.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
+  font-family: kondorital;
+  src: url("kondorital.1a4ec608.woff2") format("woff2"), url("kondorital.0ea03185.woff") format("woff"), url("kondorital.3f773fb5.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: open-sauce;
-  src: url("OpenSauceSans-Light.8e420bc6.ttf") format("truetype");
-  src: url("OpenSauceSans-Light.5fbe55ac.woff2") format("woff2"), url("OpenSauceSans-Light.d1c457e3.woff") format("woff"), url("OpenSauceSans-Light.a154bf9e.eot#iefix") format("embedded-opentype");
+  src: url("OpenSauceSans-Light.5fbe55ac.woff2") format("woff2"), url("OpenSauceSans-Light.d1c457e3.woff") format("woff"), url("OpenSauceSans-Light.8e420bc6.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -762,8 +768,7 @@ img, video {
 
 @font-face {
   font-family: open-sauce;
-  src: url("OpenSauceSans-Regular.9a38dc02.ttf") format("truetype");
-  src: url("OpenSauceSans-Regular.4924356d.woff2") format("woff2"), url("OpenSauceSans-Regular.3a36c711.woff") format("woff"), url("OpenSauceSans-Regular.a7f0205b.eot#iefix") format("embedded-opentype");
+  src: url("OpenSauceSans-Regular.4924356d.woff2") format("woff2"), url("OpenSauceSans-Regular.3a36c711.woff") format("woff"), url("OpenSauceSans-Regular.9a38dc02.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -771,8 +776,7 @@ img, video {
 
 @font-face {
   font-family: open-sauce;
-  src: url("OpenSauceSans-Medium.aad08cf0.ttf") format("truetype");
-  src: url("OpenSauceSans-Medium.4809fc0c.woff2") format("woff2"), url("OpenSauceSans-Medium.d39bd3ec.woff") format("woff"), url("OpenSauceSans-Medium.9d9d5a99.eot#iefix") format("embedded-opentype");
+  src: url("OpenSauceSans-Medium.4809fc0c.woff2") format("woff2"), url("OpenSauceSans-Medium.d39bd3ec.woff") format("woff"), url("OpenSauceSans-Medium.aad08cf0.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -780,8 +784,7 @@ img, video {
 
 @font-face {
   font-family: open-sauce;
-  src: url("OpenSauceSans-Semibold.00889785.ttf") format("truetype");
-  src: url("OpenSauceSans-Semibold.28235147.woff2") format("woff2"), url("OpenSauceSans-Semibold.49083506.woff") format("woff"), url("OpenSauceSans-Semibold.12dbad7e.eot#iefix") format("embedded-opentype");
+  src: url("OpenSauceSans-Semibold.28235147.woff2") format("woff2"), url("OpenSauceSans-Semibold.49083506.woff") format("woff"), url("OpenSauceSans-Semibold.00889785.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
