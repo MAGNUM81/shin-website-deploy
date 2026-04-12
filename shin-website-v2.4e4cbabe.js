@@ -1,4 +1,4 @@
-const targetDate = new Date("2026-04-11T18:00:00").getTime();
+const targetDate = new Date("2026-06-06T18:00:00").getTime();
 const root = document.getElementById("countdown");
 // Utility to create a time block (e.g., "12 DAYS")
 function createTimeBlock(label) {
