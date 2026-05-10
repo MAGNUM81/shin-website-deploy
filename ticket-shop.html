@@ -44,55 +44,36 @@
 <script>document.addEventListener("DOMContentLoaded",function(){let e=document.getElementById("nav-button-open"),t=document.getElementById("nav-button-close"),n=document.getElementById("mobile-logo"),i=document.getElementById("mobile-menu"),l=document.getElementById("nav-links-mob"),o=document.getElementsByTagName("body")[0];e.addEventListener("click",function(){e.classList.toggle("invisible"),i.classList.toggle("hidden"),n.classList.toggle("invisible"),o.classList.toggle("overflow-y-hidden")}),t.addEventListener("click",function(){e.classList.toggle("invisible"),i.classList.toggle("hidden"),n.classList.toggle("invisible"),o.classList.toggle("overflow-y-hidden")}),l.addEventListener("click",function(){t.click()})});</script>
 
 
-<script>window.addEventListener("DOMContentLoaded",()=>{{let e=document.querySelector(".hide-when-shop-closed");e&&e.remove();let o=document.querySelector(".show-when-shop-closed");o&&o.classList.remove("hidden")}});</script>
+<script>window.addEventListener("DOMContentLoaded",()=>{});</script>
 <div class="flex-grow main-container max-w-[1440px] overflow-x-hidden self-center w-full" style="background:url(starlight.db34feeb.png) top no-repeat">
   <div class="flex flex-col items-center max-w-full md:gap-10">
     <h1 class=text-[goldenrod]>Boutique</h1>
     <p class="hidden show-when-shop-closed">La boutique est actuellement fermée</p>
     <div class="flex flex-col gap-5 hide-when-shop-closed items-center">
       <div class="bg-[#111111aa] flex flex-col gap-5 items-center justify-center max-w-[50%] min-w-[200px] p-6 rounded-lg">
-        <p class="text-center text-xl">Billets pour<br><span class=font-bold>K1 SHIN 5</span></p>
+        <p class="text-center text-xl">Billets pour<br><span class=font-bold>K1 SHIN VI</span></p>
         <div id=countdown class="flex font-anton gap-6 justify-around mx-10 text-center">
         </div>
       </div>
       <div id=ticket-list class="flex flex-col gap-5 grid-cols-2 grid-flow-row grid-rows-4 max-w-full md:grid text-black">
-        <div id=ticket_RegFightDay_online class=ticket-card>
-          <p>Billets Réguliers FIGHT DAY</p>
-          <p class=font-bold>50$ chacun</p>
-          <a target=_blank href=https://square.link/u/9bKfoeWX class="bg-[#3755ff] square-link text-white">Achat
-            en ligne</a>
-          <p>Admission générale</p>
-        </div>
-        <div id=ticket_Reg_online class=ticket-card>
-          <p>Billets Réguliers EARLY BIRD</p>
-          <p class=font-bold>45$ chacun</p>
-          <a class="bg-gray-700 select-none square-link text-white">
-            VENTE TERMINÉE</a>
-          <p>Admission générale</p>
-        </div>
-        <div id=ticket_ringside_online class=ticket-card>
-          <p>Billets Ringside</p>
-          <p class=font-bold>60$ chacun</p>
-          <a class="bg-[#751b1b] select-none square-link text-white">
-            SOLD OUT</a>
-          <p>Place assise près du ring</p>
-        </div>
-        <div id=ticket_table4 class=ticket-card>
-          <p>Table de 4</p>
-          <p class=font-bold>280$</p>
-          <a target=_blank href="mailto:shincombat@gmail.com?subject=Table%20de%204%20-%20K1%20Shin%20%235" class="bg-[#8b3df2] square-link text-white">Courriel</a>
-          <p>Vous et vos 3 amis!</p>
-        </div>
-        <div id=ticket_table6 class=ticket-card>
-          <p>Table de 6</p>
-          <p class=font-bold>420$</p>
-          <a target=_blank href="mailto:shincombat@gmail.com?subject=Table%20de%206%20-%20K1%20Shin%20%235-" class="bg-[#3ebb2d] square-link text-white">Courriel</a>
-          <p>Vous et vos 5 amis!</p>
-        </div>
       </div>
     </div>
   </div>
 </div>
+<script>const tickets=[{id:"ticket_Reg_online",title:"Billets Réguliers EARLY BIRD",price:"45$ chacun",description:"Admission générale",status:"available",buttonText:"Achat en ligne",href:"https://square.link/u/xb6Z7Tj2",colorClass:"bg-gray-700"},{id:"ticket_ringside_online",title:"Billets Ringside",price:"60$ chacun",description:"Place assise près du ring",status:"available",buttonText:"Achat en ligne",href:"https://square.link/u/g2mEgTWw",colorClass:"bg-[#751b1b]"},{id:"ticket_table4",title:"Table de 4",price:"280$",description:"Vous et vos 3 amis!",status:"email",buttonText:"Courriel",href:"mailto:shincombat@gmail.com?subject=Table%20de%204%20-%20K1%20Shin%20%236",colorClass:"bg-[#8b3df2]"},{id:"ticket_table6",title:"Table de 6",price:"420$",description:"Vous et vos 5 amis!",status:"email",buttonText:"Courriel",href:"mailto:shincombat@gmail.com?subject=Table%20de%206%20-%20K1%20Shin%20%236",colorClass:"bg-[#3ebb2d]"}],ticketList=document.getElementById("ticket-list");ticketList.innerHTML=tickets.map(t=>{let e="available"===t.status||"email"===t.status;return`
+      <div id="${t.id}" class="ticket-card">
+        <p>${t.title}</p>
+        <p class="font-bold">${t.price}</p>
+
+        <a
+          ${e?`target="_blank" href="${t.href}"`:""}
+          class="${e?"":"select-none"} square-link text-white ${t.colorClass}">
+          ${t.buttonText}
+        </a>
+
+        <p>${t.description}</p>
+      </div>
+    `}).join("");</script>
 <footer class=mt-8>
     <div class="flex flex-row justify-around lg:mx-[10%] lg:px-[5%] px-4">
       <div class="flex flex-col"><p class="font-bold text-xs">Veuillez noter que toutes les ventes de billets sont finales une fois l’événement terminé. <br>Aucun remboursement, échange ou crédit ne pourra être accordé après la fin de l’événement, peu importe les circonstances.<br>Nous vous remercions de votre compréhension.</div>
