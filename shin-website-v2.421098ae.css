@@ -608,6 +608,11 @@ img, video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-\[goldenrod\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(218 165 32 / var(--tw-border-opacity));
+}
+
 .border-opacity-10 {
   --tw-border-opacity: .1;
 }
@@ -641,6 +646,11 @@ img, video {
   background-color: rgb(218 165 32 / var(--tw-bg-opacity));
 }
 
+.bg-blue-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -656,9 +666,9 @@ img, video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-blue-700 {
+.bg-black {
   --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-10 {
