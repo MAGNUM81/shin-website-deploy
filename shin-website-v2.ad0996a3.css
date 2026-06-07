@@ -339,6 +339,10 @@ img, video {
   margin-top: 2.5rem;
 }
 
+.mt-2 {
+  margin-top: .5rem;
+}
+
 .mt-24 {
   margin-top: 6rem;
 }
@@ -375,12 +379,20 @@ img, video {
   display: none;
 }
 
+.aspect-video {
+  aspect-ratio: 16 / 9;
+}
+
 .h-\[48px\] {
   height: 48px;
 }
 
 .h-\[50px\] {
   height: 50px;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .min-h-screen {
@@ -433,6 +445,10 @@ img, video {
 
 .max-w-\[410px\] {
   max-width: 410px;
+}
+
+.max-w-\[480px\] {
+  max-width: 480px;
 }
 
 .max-w-\[50\%\] {
@@ -530,6 +546,10 @@ img, video {
   justify-content: space-around;
 }
 
+.gap-1 {
+  gap: .25rem;
+}
+
 .gap-10 {
   gap: 2.5rem;
 }
@@ -548,6 +568,10 @@ img, video {
 
 .gap-3 {
   gap: .75rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-5 {
@@ -594,8 +618,27 @@ img, video {
   border-width: 1px;
 }
 
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-t-\[3px\] {
   border-top-width: 3px;
+}
+
+.border-\[\#222\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(34 34 34 / var(--tw-border-opacity));
+}
+
+.border-\[\#333\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(51 51 51 / var(--tw-border-opacity));
+}
+
+.border-\[goldenrod\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(218 165 32 / var(--tw-border-opacity));
 }
 
 .border-black {
@@ -614,6 +657,11 @@ img, video {
 
 .bg-\[\#111111aa\] {
   background-color: #111a;
+}
+
+.bg-\[\#111\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 17 17 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#3755ff\] {
@@ -639,11 +687,6 @@ img, video {
 .bg-\[goldenrod\] {
   --tw-bg-opacity: 1;
   background-color: rgb(218 165 32 / var(--tw-bg-opacity));
-}
-
-.bg-blue-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
 .bg-gray-300 {
@@ -705,6 +748,11 @@ img, video {
   padding-bottom: 2.5rem;
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .py-2 {
   padding-top: .5rem;
   padding-bottom: .5rem;
@@ -713,6 +761,11 @@ img, video {
 .py-2\.5 {
   padding-top: .625rem;
   padding-bottom: .625rem;
+}
+
+.py-3 {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 }
 
 .pb-2 {
@@ -725,6 +778,10 @@ img, video {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-left {
@@ -741,6 +798,11 @@ img, video {
 
 .text-\[2rem\] {
   font-size: 2rem;
+}
+
+.text-sm {
+  font-size: .875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl {
@@ -761,13 +823,40 @@ img, video {
   font-weight: 700;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .leading-\[48px\] {
   line-height: 48px;
+}
+
+.tracking-wider {
+  letter-spacing: .05em;
+}
+
+.tracking-widest {
+  letter-spacing: .1em;
 }
 
 .text-\[\#060606\] {
   --tw-text-opacity: 1;
   color: rgb(6 6 6 / var(--tw-text-opacity));
+}
+
+.text-\[\#555\] {
+  --tw-text-opacity: 1;
+  color: rgb(85 85 85 / var(--tw-text-opacity));
+}
+
+.text-\[\#aaa\] {
+  --tw-text-opacity: 1;
+  color: rgb(170 170 170 / var(--tw-text-opacity));
+}
+
+.text-\[\#dbdbdb\] {
+  --tw-text-opacity: 1;
+  color: rgb(219 219 219 / var(--tw-text-opacity));
 }
 
 .text-\[goldenrod\] {
@@ -780,6 +869,11 @@ img, video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+
 .text-red-600 {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
@@ -788,6 +882,15 @@ img, video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.placeholder-\[\#666\]::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(102 102 102 / var(--tw-placeholder-opacity));
 }
 
 .shadow {
@@ -1256,6 +1359,24 @@ header h1 {
   display: flex;
 }
 
+.focus\:border-\[goldenrod\]:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(218 165 32 / var(--tw-border-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline-offset: 2px;
+  outline: 2px solid #0000;
+}
+
+.disabled\:cursor-not-allowed:disabled {
+  cursor: not-allowed;
+}
+
+.disabled\:opacity-50:disabled {
+  opacity: .5;
+}
+
 @media (width >= 640px) {
   .sm\:block {
     display: block;
@@ -1364,4 +1485,4 @@ header h1 {
     padding-top: 3rem;
   }
 }
-/*# sourceMappingURL=shin-website-v2.421098ae.css.map */
+/*# sourceMappingURL=shin-website-v2.ad0996a3.css.map */
